@@ -7,6 +7,7 @@
 <b:if cond='!data:view.isLayoutMode'>
 <!-- Theme CSS Style -->
 <b:skin version='1.0.0'><![CDATA[
+@import url('https://fonts.googleapis.com/css2?family=Huninn:wght@400;700&display=swap');
 
 /* -----------------------------------------------
 Blogger Template Style
@@ -21,7 +22,7 @@ Paid By   :  https://www.dizzycloud.my.id/
 <!-- Variable definitions -->
 <Variable name="keycolor" description="Main Color" type="color" default="$(main.color)" value="#4285F4"/>
 <Group description="Theme Options" selector="body">
-    <Variable name="darkmode" description="Native Dark Mode" type="length" default="0px" min="0px" max="1px" value="1px"/>
+    <Variable name="darkmode" description="Native Dark Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
     <Variable name="userdarkmode" description="User Dark Mode" type="length" default="1px" min="0px" max="1px" value="1px"/>
     <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
     <Variable name="fixedmenu" description="Fixed Menu" type="length" default="1px" min="0px" max="1px" value="1px"/>
@@ -35,59 +36,59 @@ Paid By   :  https://www.dizzycloud.my.id/
 <Group description="Theme Fonts" selector="body">
     <Variable name="main.font" description="Site Font" type="font" family="LXGW WenKai Mono TC"
               default="normal 700 16px $(family)"
-              value="normal 700 16px &#39;LXGW WenKai Mono TC&#39;, sans-serif"/>
+              value="normal 700 16px &#39;Huninn&#39;, sans-serif"/>
 
     <Variable name="title.font" description="Title Font" type="font" family="LXGW WenKai Mono TC"
               default="normal 700 20px $(family)"
-              value="normal 700 20px &#39;LXGW WenKai Mono TC&#39;, sans-serif"/>
+              value="normal 700 20px &#39;Huninn&#39;, sans-serif"/>
 
     <Variable name="meta.font" description="Meta Font" type="font" family="LXGW WenKai Mono TC"
               default="normal 700 14px $(family)"
-              value="normal 700 14px &#39;LXGW WenKai Mono TC&#39;, sans-serif"/>
+              value="normal 700 14px &#39;Huninn&#39;, sans-serif"/>
 
-    <Variable name="text.font" description="Text Font" type="font" family="Work Sans" default="normal 400 16px $(family)"  value="normal 400 14px Droid Sans Mono"/>
+    <Variable name="text.font" description="Text Font" type="font" family="Work Sans" default="normal 400 16px $(family)"  value="normal 400 14px &#39;Huninn&#39;, sans-serif"/>
 </Group>
 
 
 <Group description="Background" selector="body">
     <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
-    <Variable name="body.background.color" description="Body Background" type="color" default="#F4F5FA"  value="#F4F5FA"/>
-    <Variable name="outer.bg" description="Outer Wrapper Background" type="color" default="#F8F9FA"  value="#F8F9FA"/>
+    <Variable name="body.background.color" description="Body Background" type="color" default="#F4F5FA"  value="#f0fff4"/>
+    <Variable name="outer.bg" description="Outer Wrapper Background" type="color" default="#F8F9FA"  value="#f7fafc"/>
     <Variable name="background.cover" description="Background Image Size Cover" type="length" default="0px" min="0px" max="1px" value="0px"/>
 </Group>
 <Group description="Theme Colors" selector="body">
-    <Variable name="main.color" description="Theme Color" type="color" default="#4285F4" value="#4285F4"/>
-    <Variable name="title.color" description="Title Color" type="color" default="#344955" value="#344955"/>
-    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
-    <Variable name="meta.color" description="Meta Color" type="color" default="#919CA2" value="#919CA2"/>
-    <Variable name="text.color" description="Text Color" type="color" default="#5B696F"  value="#5B696F"/>
+    <Variable name="main.color" description="Theme Color" type="color" default="#4285F4" value="#38a169"/>
+    <Variable name="title.color" description="Title Color" type="color" default="#344955" value="#2d3748"/>
+    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#38a169"/>
+    <Variable name="meta.color" description="Meta Color" type="color" default="#919CA2" value="#718096"/>
+    <Variable name="text.color" description="Text Color" type="color" default="#5B696F"  value="#4a5568"/>
 </Group>
 <Group description="Site Header" selector="header#header-wrapper">
-    <Variable name="header.bg" description="Header Background" type="color" default="#344955" value="#344955"/>
-    <Variable name="header.color" description="Header Color" type="color" default="#F6F7F8" value="#F6F7F8"/>
-    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="header.bg" description="Header Background" type="color" default="#344955" value="#ffffff"/>
+    <Variable name="header.color" description="Header Color" type="color" default="#F6F7F8" value="#2d3748"/>
+    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Sub Menu" selector="header#header-wrapper">
     <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="$(title.color)" value="#344955"/>
-    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="$(title.color)" value="#2d3748"/>
+    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Mega Menu" selector="header#header-wrapper">
     <Variable name="megamenu.bg" description="Mega Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="megamenu.color" description="Mega Menu Color" type="color" default="$(post.title.color)" value="#344955"/>
-    <Variable name="megamenu.hover.color" description="MegaMenu Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="megamenu.color" description="Mega Menu Color" type="color" default="$(post.title.color)" value="#2d3748"/>
+    <Variable name="megamenu.hover.color" description="MegaMenu Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Mobile Menu">
     <Variable name="mmenu.bg" description="Mobile Menu Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="$(title.color)" value="#344955"/>
-    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="$(title.color)" value="#2d3748"/>
+    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Header ADS" selector="#header-ads-wrap">
     <Variable name="headerad.onpost" description="Show on Post Page" type="length" default="1px" min="0px" max="1px" value="1px"/>
 </Group>
 <Group description="Post Styles" select="div#main">
-    <Variable name="post.title.color" description="Post Title Color" type="color" default="$(title.color)" value="#344955"/>
-    <Variable name="post.title.hover.color" description="Post Title Hover Color" type="color" default="$(title.hover.color)" value="#4285F4"/>
+    <Variable name="post.title.color" description="Post Title Color" type="color" default="$(title.color)" value="#2d3748"/>
+    <Variable name="post.title.hover.color" description="Post Title Hover Color" type="color" default="$(title.hover.color)" value="#38a169"/>
 </Group>
 <Group description="Post Page Styles" select="div#main">
     <Variable name="post.text.color" description="Post Text Color" type="color" default="$(text.color)" value="#5B696F"/>
@@ -101,30 +102,30 @@ Paid By   :  https://www.dizzycloud.my.id/
 </Group>
 <Group description="Theme Widgets" select="div#sidebar">
     <Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="wtitle.color" description="Widget Title Color" type="color" default="$(title.color)" value="#344955"/>
+    <Variable name="wtitle.color" description="Widget Title Color" type="color" default="$(title.color)" value="#2d3748"/>
 </Group>
 <Group description="Footer ADS" selector="#footer-ads-wrap">
     <Variable name="footerad.onpost" description="Show on Post Page" type="length" default="1px" min="0px" max="1px" value="1px"/>
 </Group>
 <Group description="Theme Footer" selector="footer#footer-wrapper">
-    <Variable name="footer.bg" description="Footer Background" type="color" default="#344955" value="#344955"/>
-    <Variable name="footer.color" description="Footer Color" type="color" default="#F6F7F8" value="#F6F7F8"/>
-    <Variable name="footer.text.color" description="Footer Text Color" type="color" default="#B4C1CC" value="#B4C1CC"/>
-    <Variable name="footer.hover.color" description="Footer Links Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="footer.bg" description="Footer Background" type="color" default="#344955" value="#2d3748"/>
+    <Variable name="footer.color" description="Footer Color" type="color" default="#F6F7F8" value="#f7fafc"/>
+    <Variable name="footer.text.color" description="Footer Text Color" type="color" default="#B4C1CC" value="#a0aec0"/>
+    <Variable name="footer.hover.color" description="Footer Links Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Footer Bar" selector="div.footerbar">
-    <Variable name="footerbar.bg" description="Footer Bar Background" type="color" default="#2C3E48" value="#2C3E48"/>
-    <Variable name="footerbar.color" description="Footer Bar Color" type="color" default="#F6F7F8" value="#F6F7F8"/>
-    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="footerbar.bg" description="Footer Bar Background" type="color" default="#2C3E48" value="#1a202c"/>
+    <Variable name="footerbar.color" description="Footer Bar Color" type="color" default="#F6F7F8" value="#f7fafc"/>
+    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="$(main.color)" value="#38a169"/>
 </Group>
 <Group description="Cookie Consent" selector="#cookie-ify">
-    <Variable name="cookie.bg" description="Cookie Background" type="color" default="$(footer.bg)" value="#344955"/>
-    <Variable name="cookie.color" description="Cookie Text Color" type="color" default="$(footer.text.color)" value="#B4C1CC"/>
+    <Variable name="cookie.bg" description="Cookie Background" type="color" default="$(footer.bg)" value="#2d3748"/>
+    <Variable name="cookie.color" description="Cookie Text Color" type="color" default="$(footer.text.color)" value="#a0aec0"/>
 </Group>
 <Group description="Theme Buttons">
-    <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#4285F4"/>
+    <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#38a169"/>
     <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
-    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#3367D6" value="#3367D6"/>
+    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#3367D6" value="#2f855a"/>
     <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#FFFFFF"/>
 </Group>
 <Group description="Reset (Theme Fonts)">
@@ -283,6 +284,7 @@ html.is-dark{
 --avatar-shadow:0px 1px 4px rgba(0,0,0,0.05);
 --button-shadow:0px 1px 4px rgba(0,0,0,0.05);
 }
+html.is-dark #post-body{background-color:#2d3748;padding:20px;border-radius:8px}
 html.rtl{
 --body-font:'Tajawal',Arial,sans-serif;
 --title-font:'Tajawal',Arial,sans-serif;
@@ -340,7 +342,7 @@ a,input,button{transition:all .0s ease}
 .entry-info .entry-title{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.5)}
 .entry-info .entry-meta{color:#ccc}
 .entry-info .entry-meta .author-name{color:#ddd}
-.entry-title{color:var(--post-title-color);font-weight:700;line-height:1.3em}
+.entry-title{color:var(--post-title-color);font-family:var(--title-font);font-weight:700;line-height:1.3em}
 .entry-title a{display:block;color:var(--post-title-color)}
 .entry-title a:hover{color:var(--post-title-hover-color)}
 .entry-meta{font-family:var(--meta-font);font-size:12px;color:var(--meta-color);font-weight:400;margin:0}
@@ -486,7 +488,7 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}
 #seopro-pro-main-nav .show-menu{display:block}
 #seopro-pro-main-nav ul#seopro-pro-main-nav-menu{display:flex;flex-wrap:wrap}
 #seopro-pro-main-nav ul > li{position:relative;padding:0;margin:0}
-#seopro-pro-main-nav-menu > li > a{position:relative;display:block;height:56px;font-size:16px;color:var(--header-color);font-weight:600;line-height:56px;padding:0 14px;margin:0}
+#seopro-pro-main-nav-menu > li > a{position:relative;display:block;height:56px;font-family:var(--main-font);font-size:16px;color:var(--header-color);font-weight:600;line-height:56px;padding:0 14px;margin:0}
 #seopro-pro-main-nav-menu > li:hover > a{color:var(--header-hover-color)}
 #seopro-pro-main-nav ul > li > ul,#seopro-pro-main-nav ul > li > .ul{position:absolute;float:left;left:0;top:56px;width:180px;background-color:var(--submenu-bg);z-index:99999;padding:5px 0;backface-visibility:hidden;visibility:hidden;opacity:0;box-shadow:0 5px 10px 0 rgba(0,0,0,0.1);border-radius:4px}
 .rtl #seopro-pro-main-nav ul > li > ul,.rtl #seopro-pro-main-nav ul > li > .ul{left:auto;right:0}
@@ -494,7 +496,7 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}
 .rtl #seopro-pro-main-nav ul > li > ul > li > ul{left:unset;right:100%}
 #seopro-pro-main-nav ul > li > ul > li{display:block;float:none;position:relative}
 .rtl #seopro-pro-main-nav ul > li > ul > li{float:none}
-#seopro-pro-main-nav ul > li > ul > li a{position:relative;display:block;font-size:14px;color:var(--submenu-color);font-weight:400;padding:8px 14px;margin:0}
+#seopro-pro-main-nav ul > li > ul > li a{position:relative;display:block;font-family:var(--main-font);font-size:14px;color:var(--submenu-color);font-weight:400;padding:8px 14px;margin:0}
 #seopro-pro-main-nav ul > li > ul > li:hover > a{color:var(--submenu-hover-color)}
 #seopro-pro-main-nav ul > li.has-sub > a:after{content:'\f078';float:right;font-family:'Font Awesome 5 Free';font-size:9px;font-weight:900;margin:-1px 0 0 4px}
 .rtl #seopro-pro-main-nav ul > li.has-sub > a:after{float:left;margin:-1px 4px 0 0}
@@ -508,7 +510,7 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}
 .mega-items .mega-item{position:relative;width:100%;padding:0}
 .mega-items .mega-content{position:relative;float:left;width:100%;padding:0}
 .mega-content .entry-image-wrap{position:relative;display:block;width:100%;height:116px;overflow:hidden;z-index:1;margin:0 0 8px;border-radius:4px}
-.mega-content .entry-title{font-size:14px;margin:0}
+.mega-content .entry-title{font-family:var(--title-font);font-size:14px;margin:0}
 .mega-content .entry-title a{color:var(--megamenu-color)}
 .mega-content .entry-title a:hover{color:var(--megamenu-hover-color)}
 .mega-menu .error-msg{justify-content:center}
@@ -518,8 +520,8 @@ to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}
 .main-toggle-wrap{position:relative;height:56px;display:flex;align-items:center;z-index:20;margin:0}
 .main-toggle-style{position:relative;width:36px;height:36px;color:var(--header-color);font-size:16px;text-align:center;line-height:36px;cursor:pointer;z-index:20;padding:0;margin:0}
 .darkmode-toggle{width:auto;font-size:14px;padding:0 15px}
-.darkmode-toggle:after{content:'\f186';font-family:'Font Awesome 5 Free';font-weight:400;margin:0}
-html.is-dark .darkmode-toggle:after{content:'\f185'}
+.darkmode-toggle:after{content:'\f186';font-family:'Font Awesome 5 Free';font-weight:900;margin:0}
+html.is-dark .darkmode-toggle:after{content:'\f185';font-family:'Font Awesome 5 Free';font-weight:900}
 .darkmode-toggle:hover{color:var(--header-hover-color)}
 .show-search{background-color:rgba(155,155,155,0.05)}
 .show-search:hover{color:var(--header-hover-color)}
@@ -643,7 +645,7 @@ to{opacity:1;transform:translate3d(0,0,0)}
 #breadcrumb a.home,#breadcrumb a:hover{color:var(--main-color)}
 #breadcrumb em:after{content:'\f054';font-family:'Font Awesome 5 Free';font-size:9px;font-weight:900;font-style:normal;vertical-align:middle;margin:0 3px}
 .rtl #breadcrumb em:after{content:'\f053'}
-.item-post h1.entry-title{position:relative;float:left;width:100%;font-size:$(itempost.title.size);font-weight:700;margin:0}
+.item-post h1.entry-title{position:relative;float:left;width:100%;font-family:var(--title-font);font-size:$(itempost.title.size);font-weight:700;margin:0}
 .item-post .has-meta h1.entry-title{margin-bottom:15px}
 .item-post .entry-meta{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:13px;margin:0}
 .item-post .entry-meta .align-left,.item-post .entry-meta .align-right{display:flex;flex-wrap:wrap;align-items:center}
@@ -660,7 +662,7 @@ to{opacity:1;transform:translate3d(0,0,0)}
 .rtl .item-post .entry-meta .entry-comments-link:before{margin:0 0 0 5px}
 .item-post .entry-meta .entry-comments-link.show{display:block}
 .entry-content-wrap{position:relative;float:left;width:100%;margin:0}
-#post-body{position:relative;float:left;width:100%;font-family:var(--text-font);font-size:$(itempost.content.size);color:var(--post-text-color);line-height:1.6em;padding:0;margin:20px 0 0}
+#post-body{position:relative;float:left;width:100%;font-family:'Huninn', sans-serif !important;font-size:$(itempost.content.size);color:var(--post-text-color);line-height:1.6em;padding:20px;background-color:#fafafa;margin:20px 0 0;border-radius:8px}
 .post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{font-size:17px;color:var(--title-color);margin:0 0 20px}
 .post-body h1{font-size:26px}
 .post-body h2{font-size:23px}
@@ -679,15 +681,16 @@ blockquote:before{position:absolute;left:10px;top:10px;content:'\f10e';font-fami
 .post-body .responsive-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 .post-body ul{padding:0 0 0 15px;margin:10px 0}
 .rtl .post-body ul{padding:0 15px 0 0}
-.post-body li{margin:5px 0;padding:0}
+.post-body li{margin:5px 0;padding:0;display:flex;align-items:flex-start;gap:6px}
+.post-body li > p{margin:0}
 .post-body ul li,.post-body ol ul li{list-style:none}
-.post-body ul li:before{display:inline-block;content:'\2022';margin:0 5px 0 0}
-.rtl .post-body ul li:before{margin:0 0 0 5px}
+.post-body ul li:before{display:inline-block;content:'\2022';margin:.2em 0 0 0}
+.rtl .post-body ul li:before{margin:.2em 0 0 0}
 .post-body ol{counter-reset:ify;padding:0 0 0 15px;margin:10px 0}
 .rtl .post-body ol{padding:0 15px 0 0}
 .post-body ol > li{counter-increment:ify;list-style:none}
-.post-body ol > li:before{display:inline-block;content:counters(ify,'.')'.';margin:0 5px 0 0}
-.rtl .post-body ol > li:before{margin:0 0 0 5px}
+.post-body ol > li:before{display:inline-block;content:counters(ify,'.')'.';margin:.2em 0 0 0}
+.rtl .post-body ol > li:before{margin:.2em 0 0 0}
 .post-body u{text-decoration:underline}
 .post-body strike{text-decoration:line-through}
 .post-body sup{vertical-align:super}
@@ -722,6 +725,11 @@ blockquote:before{position:absolute;left:10px;top:10px;content:'\f10e';font-fami
 .rtl .post-body table{text-align:right}
 .post-body table td,.post-body table th{padding:7px 15px;border:1px solid var(--border-color)}
 .post-body table thead th{color:var(--post-title-color);font-weight:700;vertical-align:bottom}
+html.is-dark .post-body table{background-color:#2d3748;color:#e2e8f0;border-color:#4a5568}
+html.is-dark .post-body table td,html.is-dark .post-body table th{color:#e2e8f0;border-color:#4a5568}
+html.is-dark .post-body table thead th{background:#111827!important;background-color:#111827!important;color:#f8fafc!important}
+html.is-dark .post-body table tr:first-child td,html.is-dark .post-body table tr:first-child th{background:#111827!important;background-color:#111827!important;color:#f8fafc!important;font-weight:700}
+html.is-dark .post-body table tbody tr:nth-child(even){background-color:#273244}
 table.tr-caption-container, table.tr-caption-container td, table.tr-caption-container th{line-height:1;padding:0;border:0}
 table.tr-caption-container td.tr-caption{font-size:13px;color:var(--meta-color);padding:6px 0 0}
 .tocify-wrap{display:flex;width:100%;clear:both;margin:0}
@@ -745,12 +753,14 @@ a.tocify-title:hover{text-decoration:none}
 .contact-form .contact-form-email{width:calc(50% - 5px);float:right;height:36px}
 .rtl .contact-form .contact-form-email{float:left}
 .contact-form .contact-form-button-submit{font-family:var(--body-font);height:36px}
-.post-body pre,pre.code-box{position:relative;display:block;background-color:#344955;font-family:Monospace;font-size:13px;color:#f6f7f8;white-space:pre-wrap;line-height:1.4em;padding:15px;margin:0;border:0;border-radius:4px}
-html.is-dark .post-body pre,html.is-dark pre.code-box{background-color:rgba(155,155,155,0.05)}
+.post-body pre,pre.code-box{position:relative;display:block;background-color:#f7fafc;font-family:'Droid Sans Mono', 'Courier New', monospace;font-size:14px;color:#2d3748;white-space:pre-wrap;line-height:1.5em;padding:20px;margin:20px 0;border:1px solid #e2e8f0;border-radius:6px;overflow-x:auto}
+.post-body code:not(pre code){background-color:#f7fafc;color:#38a169;padding:2px 6px;border-radius:3px;font-family:'Droid Sans Mono', 'Courier New', monospace;font-size:0.9em}
+html.is-dark .post-body pre,html.is-dark pre.code-box{background-color:#2d3748;color:#e2e8f0;border:1px solid #4a5568}
+html.is-dark .post-body code:not(pre code){background-color:#2d3748;color:#4299e1}
 .post-body .google-auto-placed{margin:30px 0 0}
 .post-footer{position:relative;float:left;width:100%;margin:0}
 .entry-labels{position:relative;float:left;width:100%;display:flex;flex-wrap:wrap;margin:20px 0 0}
-.entry-labels span,.entry-labels a{font-size:14px;font-weight:400;line-height:1;margin:5px 5px 0 0}
+.entry-labels span,.entry-labels a{font-family:var(--meta-font);font-size:14px;font-weight:400;line-height:1;margin:5px 5px 0 0}
 .rtl .entry-labels span,.rtl .entry-labels a{margin:5px 0 0 5px}
 .entry-labels span{color:var(--title-color);font-weight:700}
 .entry-labels a{color:var(--main-color);border-bottom:1px solid var(--main-color)}
@@ -1712,7 +1722,7 @@ var noThumbnail = "https://4.bp.blogspot.com/-eALXtf-Ljts/WrQYAbzcPUI/AAAAAAAABj
       <!-- Post Breadcrumbs -->
       <b:if cond='data:view.isPost'>
         <b:if cond='data:skin.vars.breadcrumb == &quot;1px&quot;'><nav id='breadcrumb'><a class='home' expr:href='data:blog.homepageUrl'><data:messages.home/></a><b:if cond='data:post.labels'><em class='delimiter'/><a class='label' expr:href='data:post.labels.first.url'><data:post.labels.first.name/></a></b:if></nav></b:if>
-        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/>Uncategorized</b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
+        <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemLisment&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.name.jsonEscaped/><b:else/>Uncategorized</b:if>&quot;,&quot;item&quot;:&quot;<b:if cond='data:post.labels'><data:post.labels.first.url.canonical.jsonEscaped/><b:else/><b:eval expr='data:blog.homepageUrl.canonical.jsonEscaped + &quot;search/&quot;'/></b:if>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:3,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
       </b:if>
       <b:if cond='data:view.isPage'>
         <script type='application/ld+json'>{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;<data:messages.home.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:blog.homepageUrl.canonical.jsonEscaped/>&quot;},{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:2,&quot;name&quot;:&quot;<data:post.title.jsonEscaped/>&quot;,&quot;item&quot;:&quot;<data:post.url.canonical.jsonEscaped/>&quot;}]}</script>
@@ -2264,99 +2274,110 @@ var noThumbnail = "https://4.bp.blogspot.com/-eALXtf-Ljts/WrQYAbzcPUI/AAAAAAAABj
               <b:section class='seopro-pro-main-nav' id='seopro-pro-main-nav' maxwidgets='1' name='Main Menu' showaddelement='no'>
                 <b:widget id='LinkList101' locked='true' title='' type='LinkList' visible='true'>
                   <b:widget-settings>
-                    <b:widget-setting name='text-30'>_群組人LINE</b:widget-setting>
-                    <b:widget-setting name='text-31'>TELEGRAM</b:widget-setting>
-                    <b:widget-setting name='text-32'>_小截圖</b:widget-setting>
-                    <b:widget-setting name='link-39'><![CDATA[https://chromewebstore.google.com/detail/%E5%B0%8F%E6%BF%83%E7%B8%AE-quick-summary/ilgegilcecmgnomacgjiklmhfgioekof?authuser=0&hl=zh-TW]]></b:widget-setting>
-                    <b:widget-setting name='link-38'><![CDATA[https://chromewebstore.google.com/detail/webtalk-chat-with-friends/hhhdloelamldfadfobnhdhpfmbbdppdb?authuser=0&hl=zh-TW&pli=1]]></b:widget-setting>
-                    <b:widget-setting name='text-26'>_顯示ip和測速</b:widget-setting>
-                    <b:widget-setting name='link-35'>https://t.me/oli_photo_bot</b:widget-setting>
-                    <b:widget-setting name='text-27'>LINE</b:widget-setting>
-                    <b:widget-setting name='link-34'> https://t.me/oli_billion_bot</b:widget-setting>
-                    <b:widget-setting name='text-28'>_小濃縮LINE版</b:widget-setting>
-                    <b:widget-setting name='link-37'>#</b:widget-setting>
-                    <b:widget-setting name='text-29'>_解惑人</b:widget-setting>
-                    <b:widget-setting name='link-36'>https://t.me/oliservice</b:widget-setting>
-                    <b:widget-setting name='text-22'>_台灣便利商店7-11和family即期品</b:widget-setting>
-                    <b:widget-setting name='link-31'>#</b:widget-setting>
-                    <b:widget-setting name='text-23'>_股票K線辨識61種</b:widget-setting>
-                    <b:widget-setting name='link-30'>https://line.me/R/ti/p/@377mwhqu</b:widget-setting>
-                    <b:widget-setting name='text-24'>_我應該買這支股票嗎</b:widget-setting>
-                    <b:widget-setting name='link-33'>https://t.me/quantaar_bot</b:widget-setting>
-                    <b:widget-setting name='text-25'>_如果把幾位股神做成AI 開一家投資公司會如何&#65311;</b:widget-setting>
-                    <b:widget-setting name='link-32'>https://t.me/oli_img_bot</b:widget-setting>
-                    <b:widget-setting name='text-9'>_Oli家: 塔羅牌問事</b:widget-setting>
-                    <b:widget-setting name='text-8'>_Oli家: 市場分析報告產生器</b:widget-setting>
-                    <b:widget-setting name='text-20'>_股票預測LSTM</b:widget-setting>
-                    <b:widget-setting name='link-40'><![CDATA[https://chromewebstore.google.com/detail/random-gre-word-%E9%9A%A8%E6%A9%9F%E5%96%AE%E5%AD%97%E8%A4%87%E7%BF%92%E5%99%A8/mpbkdjjihhjjhmlnchkbpgfclhhdblap?hl=zh-TW&utm_source=ext_sidebar]]></b:widget-setting>
-                    <b:widget-setting name='text-21'>_PDF轉成繁體中文podcast</b:widget-setting>
-                    <b:widget-setting name='text-1'>_PDF萬用工具</b:widget-setting>
-                    <b:widget-setting name='text-0'>應用網頁工具</b:widget-setting>
-                    <b:widget-setting name='text-3'>_gpt平台</b:widget-setting>
-                    <b:widget-setting name='text-2'>_Tools前端與網路開發</b:widget-setting>
-                    <b:widget-setting name='text-5'>_中文PDF to Podcast製作機</b:widget-setting>
-                    <b:widget-setting name='text-4'>_notepad便條紙</b:widget-setting>
-                    <b:widget-setting name='text-7'>_Oli家: 旅行規劃器</b:widget-setting>
-                    <b:widget-setting name='text-6'>GPTs</b:widget-setting>
-                    <b:widget-setting name='text-19'>_股票預測prophet布林通道BB通道 </b:widget-setting>
-                    <b:widget-setting name='text-15'>_Whisper 語音轉錄- 會議 錄音 youtube</b:widget-setting>
-                    <b:widget-setting name='text-16'>_RSS新聞爬蟲</b:widget-setting>
-                    <b:widget-setting name='link-45'>https://podcast.david888.com</b:widget-setting>
-                    <b:widget-setting name='text-17'>_台灣政府招標查詢工具</b:widget-setting>
-                    <b:widget-setting name='text-18'>_潛力股列表</b:widget-setting>
-                    <b:widget-setting name='text-11'>_Oli家: 慢思考CoT</b:widget-setting>
-                    <b:widget-setting name='link-42'>https://</b:widget-setting>
-                    <b:widget-setting name='text-12'>_Oli家: 中文斷詞工具 NLP</b:widget-setting>
-                    <b:widget-setting name='link-41'><![CDATA[https://chromewebstore.google.com/detail/%E6%94%B9%E5%AD%97%E9%AB%94-font-changer/ilmdkfomedcdolkiiagifgmgohahlmoi?authuser=0&hl=zh-TW]]></b:widget-setting>
-                    <b:widget-setting name='text-13'>_Oli家: 面相</b:widget-setting>
-                    <b:widget-setting name='link-44'>https://huggingface.co/spaces/tbdavid2019/hg-markitdown</b:widget-setting>
-                    <b:widget-setting name='text-14'>HuggingFace</b:widget-setting>
-                    <b:widget-setting name='link-43'>https://bot.david888.com</b:widget-setting>
-                    <b:widget-setting name='text-10'>_Oli家: 面試候選人評估器</b:widget-setting>
-                    <b:widget-setting name='link-17'>https://huggingface.co/spaces/tbdavid2019/taiwan-tender</b:widget-setting>
-                    <b:widget-setting name='link-16'>https://huggingface.co/spaces/tbdavid2019/crawler-rss</b:widget-setting>
-                    <b:widget-setting name='link-19'>https://huggingface.co/spaces/tbdavid2019/Stock-Predict-Prophet</b:widget-setting>
-                    <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                    <b:widget-setting name='link-18'>https://huggingface.co/spaces/tbdavid2019/twStock-Underdogs</b:widget-setting>
-                    <b:widget-setting name='link-1'>https://Pdf.david888.com</b:widget-setting>
-                    <b:widget-setting name='link-13'>https://chatgpt.com/g/g-67445071ff3081918c3076ad860be46a-oli-jia-mian-xiang-suan-ming</b:widget-setting>
-                    <b:widget-setting name='link-2'>https://tool.david888.com</b:widget-setting>
-                    <b:widget-setting name='link-12'>https://chatgpt.com/g/g-B2hHXjTET-olijia-zhong-wen-duan-ci-gong-ju-nlp</b:widget-setting>
-                    <b:widget-setting name='link-15'>https://huggingface.co/spaces/tbdavid2019/whisper-stt</b:widget-setting>
-                    <b:widget-setting name='link-0'>{homepage}</b:widget-setting>
-                    <b:widget-setting name='link-14'>#</b:widget-setting>
-                    <b:widget-setting name='text-44'>_把PDF轉成Markdown</b:widget-setting>
-                    <b:widget-setting name='text-45'>_每日Podcast</b:widget-setting>
-                    <b:widget-setting name='link-11'>https://chatgpt.com/g/g-AhPpi36JA-olijia-man-si-kao-cot</b:widget-setting>
-                    <b:widget-setting name='link-10'>https://chatgpt.com/g/g-rtNYKsRNe-olijia-mian-shi-hou-xuan-ren-ping-gu-qi</b:widget-setting>
-                    <b:widget-setting name='link-9'>https://chatgpt.com/g/g-wpr0oCOgg-olijia-ta-luo-pai-wen-shi</b:widget-setting>
-                    <b:widget-setting name='text-40'>_Random GRE Word 隨機單字複習器</b:widget-setting>
-                    <b:widget-setting name='text-41'>_改字體</b:widget-setting>
-                    <b:widget-setting name='link-7'>https://chatgpt.com/g/g-JYWDDH5q3-olijia-lu-xing-gui-hua-qi</b:widget-setting>
-                    <b:widget-setting name='text-42'>開放的LLM</b:widget-setting>
-                    <b:widget-setting name='link-8'>https://chatgpt.com/g/g-eKXHQakNe-olijia-shi-chang-fen-xi-bao-gao-chan-sheng-qi</b:widget-setting>
-                    <b:widget-setting name='text-43'>_StockBot美股機器人web</b:widget-setting>
-                    <b:widget-setting name='link-5'>https://huggingface.co/spaces/tbdavid2019/PDF2Audio</b:widget-setting>
-                    <b:widget-setting name='link-6'>#</b:widget-setting>
-                    <b:widget-setting name='link-3'>https://gpt.david888.com</b:widget-setting>
-                    <b:widget-setting name='link-4'>https://wiki.david888.com</b:widget-setting>
-                    <b:widget-setting name='link-28'>https://liff.line.me/1645278921-kWRPP32q/?accountId=032trcev</b:widget-setting>
-                    <b:widget-setting name='link-27'>#</b:widget-setting>
-                    <b:widget-setting name='link-29'>https://liff.line.me/1645278921-kWRPP32q/?accountId=728wsrjq</b:widget-setting>
-                    <b:widget-setting name='link-24'>https://huggingface.co/spaces/tbdavid2019/Stock-Analyzer</b:widget-setting>
-                    <b:widget-setting name='text-37'>瀏覽器套件</b:widget-setting>
-                    <b:widget-setting name='link-23'>http://git-gl.david888.com:5678/</b:widget-setting>
-                    <b:widget-setting name='text-38'>_web talk 網頁聊天與內容匯總</b:widget-setting>
-                    <b:widget-setting name='link-26'>https://ip.david888.com</b:widget-setting>
-                    <b:widget-setting name='text-39'>_小濃縮chrome extension</b:widget-setting>
-                    <b:widget-setting name='link-25'>https://huggingface.co/spaces/tbdavid2019/ai-hedge-fund</b:widget-setting>
-                    <b:widget-setting name='link-20'>https://huggingface.co/spaces/tbdavid2019/twStock-predict</b:widget-setting>
-                    <b:widget-setting name='text-33'>_小濃縮</b:widget-setting>
-                    <b:widget-setting name='text-34'>_股靈精怪(股票)</b:widget-setting>
-                    <b:widget-setting name='link-22'>https://huggingface.co/spaces/tbdavid2019/taiwan-7-11</b:widget-setting>
-                    <b:widget-setting name='text-35'>_古靈 Gemini機器人</b:widget-setting>
-                    <b:widget-setting name='link-21'>https://huggingface.co/spaces/tbdavid2019/PDF2podcast</b:widget-setting>
-                    <b:widget-setting name='text-36'>_AI 幫你選出潛力股 | 投資新聞濃縮包 </b:widget-setting>
+                    <b:widget-setting name='text-0'>333服務</b:widget-setting>
+                    <b:widget-setting name='link-0'>#</b:widget-setting>
+                    <b:widget-setting name='text-1'>_背包客棧 - 最大的中文旅遊社群，討論範圍涵蓋全世界。希望能協助每個人完成屬於自己的旅行。</b:widget-setting>
+                    <b:widget-setting name='link-1'>https://telegram.david888.com/backpackerscomtw</b:widget-setting>
+                    <b:widget-setting name='text-2'>_NewsNow | 最热</b:widget-setting>
+                    <b:widget-setting name='link-2'>https://news.david888.com/</b:widget-setting>
+                    <b:widget-setting name='text-3'>_選出潛力股 | 投資新聞濃縮包 | 333 - 每天開盤前會更新。預測美股/台股潛力個股，挑選全球重大財經新聞重點整理。掌握盤前趨勢、快速聚焦潛力標的，就從這裡開始。</b:widget-setting>
+                    <b:widget-setting name='link-3'>https://stock.david888.com</b:widget-setting>
+                    <b:widget-setting name='text-4'>_Costco好市多(新品/優惠)最速報 - Costco好市多 商品經驗老實說 創立</b:widget-setting>
+                    <b:widget-setting name='link-4'>https://telegram.david888.com/daybuy</b:widget-setting>
+                    <b:widget-setting name='text-5'>_音樂</b:widget-setting>
+                    <b:widget-setting name='link-5'>https://music.david888.com</b:widget-setting>
+                    <b:widget-setting name='text-6'>_podcast</b:widget-setting>
+                    <b:widget-setting name='link-6'>https://podcast.david888.com</b:widget-setting>
+                    <b:widget-setting name='text-7'>_萬用工具箱</b:widget-setting>
+                    <b:widget-setting name='link-7'>https://tool.david888.com</b:widget-setting>
+                    <b:widget-setting name='text-8'>_Whisper 語音轉錄- 會議 錄音 youtube</b:widget-setting>
+                    <b:widget-setting name='link-8'>https://huggingface.co/spaces/tbdavid2019/whisper-stt</b:widget-setting>
+                    <b:widget-setting name='text-9'>_RSS新聞爬蟲</b:widget-setting>
+                    <b:widget-setting name='link-9'>https://huggingface.co/spaces/tbdavid2019/crawler-rss</b:widget-setting>
+                    <b:widget-setting name='text-10'>_台灣政府招標查詢工具</b:widget-setting>
+                    <b:widget-setting name='link-10'>https://huggingface.co/spaces/tbdavid2019/taiwan-tender</b:widget-setting>
+                    <b:widget-setting name='text-11'>_潛力股列表</b:widget-setting>
+                    <b:widget-setting name='link-11'>https://huggingface.co/spaces/tbdavid2019/twStock-Underdogs</b:widget-setting>
+                    <b:widget-setting name='text-12'>_股票預測prophet布林通道BB通道</b:widget-setting>
+                    <b:widget-setting name='link-12'>https://huggingface.co/spaces/tbdavid2019/Stock-Predict-Prophet</b:widget-setting>
+                    <b:widget-setting name='text-13'>_股票預測LSTM</b:widget-setting>
+                    <b:widget-setting name='link-13'>https://huggingface.co/spaces/tbdavid2019/twStock-predict</b:widget-setting>
+                    <b:widget-setting name='text-14'>_PDF轉成繁體中文podcast</b:widget-setting>
+                    <b:widget-setting name='link-14'>https://huggingface.co/spaces/tbdavid2019/PDF2podcast</b:widget-setting>
+                    <b:widget-setting name='text-15'>_台灣便利商店7-11和family即期品</b:widget-setting>
+                    <b:widget-setting name='link-15'>https://huggingface.co/spaces/tbdavid2019/taiwan-7-11</b:widget-setting>
+                    <b:widget-setting name='text-16'>_股票K線辨識61種</b:widget-setting>
+                    <b:widget-setting name='link-16'>http://git-gl.david888.com:5678/</b:widget-setting>
+                    <b:widget-setting name='text-17'>_我應該買這支股票嗎</b:widget-setting>
+                    <b:widget-setting name='link-17'>https://huggingface.co/spaces/tbdavid2019/Stock-Analyzer</b:widget-setting>
+                    <b:widget-setting name='text-18'>_如果把幾位股神做成AI 開一家投資公司會如何&#65311;</b:widget-setting>
+                    <b:widget-setting name='link-18'>https://huggingface.co/spaces/tbdavid2019/ai-hedge-fund</b:widget-setting>
+                    <b:widget-setting name='text-19'>_把PDF轉成Markdown</b:widget-setting>
+                    <b:widget-setting name='link-19'>https://huggingface.co/spaces/tbdavid2019/hg-markitdown</b:widget-setting>
+                    <b:widget-setting name='text-20'>_台語TTS</b:widget-setting>
+                    <b:widget-setting name='link-20'>https://huggingface.co/spaces/tbdavid2019/Taiwanese-tts</b:widget-setting>
+                    <b:widget-setting name='text-21'>GPTs與Gem</b:widget-setting>
+                    <b:widget-setting name='link-21'>#</b:widget-setting>
+                    <b:widget-setting name='text-22'>_Oli家: 旅行規劃器</b:widget-setting>
+                    <b:widget-setting name='link-22'>https://chatgpt.com/g/g-JYWDDH5q3-olijia-lu-xing-gui-hua-qi</b:widget-setting>
+                    <b:widget-setting name='text-23'>_Oli家: 市場分析報告產生器</b:widget-setting>
+                    <b:widget-setting name='link-23'>https://chatgpt.com/g/g-eKXHQakNe-olijia-shi-chang-fen-xi-bao-gao-chan-sheng-qi</b:widget-setting>
+                    <b:widget-setting name='text-24'>_Oli家: 塔羅牌問事</b:widget-setting>
+                    <b:widget-setting name='link-24'>https://chatgpt.com/g/g-wpr0oCOgg-olijia-ta-luo-pai-wen-shi</b:widget-setting>
+                    <b:widget-setting name='text-25'>_Oli家: 面試候選人評估器</b:widget-setting>
+                    <b:widget-setting name='link-25'>https://chatgpt.com/g/g-rtNYKsRNe-olijia-mian-shi-hou-xuan-ren-ping-gu-qi</b:widget-setting>
+                    <b:widget-setting name='text-26'>_Oli家: 慢思考CoT</b:widget-setting>
+                    <b:widget-setting name='link-26'>https://chatgpt.com/g/g-AhPpi36JA-olijia-man-si-kao-cot</b:widget-setting>
+                    <b:widget-setting name='text-27'>_Oli家: 中文斷詞工具 NLP</b:widget-setting>
+                    <b:widget-setting name='link-27'>https://chatgpt.com/g/g-B2hHXjTET-olijia-zhong-wen-duan-ci-gong-ju-nlp</b:widget-setting>
+                    <b:widget-setting name='text-28'>_Oli家: 面相</b:widget-setting>
+                    <b:widget-setting name='link-28'>https://chatgpt.com/g/g-67445071ff3081918c3076ad860be46a-oli-jia-mian-xiang-suan-ming</b:widget-setting>
+                    <b:widget-setting name='text-29'>_讓Gemini穩定出圖</b:widget-setting>
+                    <b:widget-setting name='link-29'>https://gemini.google.com/gem/7446c89f845e?usp=sharing</b:widget-setting>
+                    <b:widget-setting name='text-30'>LINE</b:widget-setting>
+                    <b:widget-setting name='link-30'>#</b:widget-setting>
+                    <b:widget-setting name='text-31'>_小濃縮LINE版</b:widget-setting>
+                    <b:widget-setting name='link-31'>https://liff.line.me/1645278921-kWRPP32q/?accountId=032trcev</b:widget-setting>
+                    <b:widget-setting name='text-32'>_解惑人</b:widget-setting>
+                    <b:widget-setting name='link-32'>https://liff.line.me/1645278921-kWRPP32q/?accountId=728wsrjq</b:widget-setting>
+                    <b:widget-setting name='text-33'>_群組人LINE</b:widget-setting>
+                    <b:widget-setting name='link-33'>https://line.me/R/ti/p/@377mwhqu</b:widget-setting>
+                    <b:widget-setting name='text-34'>TELEGRAM</b:widget-setting>
+                    <b:widget-setting name='link-34'>#</b:widget-setting>
+                    <b:widget-setting name='text-35'>_小截圖</b:widget-setting>
+                    <b:widget-setting name='link-35'>https://t.me/oli_img_bot</b:widget-setting>
+                    <b:widget-setting name='text-36'>_小濃縮</b:widget-setting>
+                    <b:widget-setting name='link-36'>https://t.me/quantaar_bot</b:widget-setting>
+                    <b:widget-setting name='text-37'>_股靈精怪(股票)</b:widget-setting>
+                    <b:widget-setting name='link-37'>https://t.me/oli_billion_bot</b:widget-setting>
+                    <b:widget-setting name='text-38'>_古靈 Gemini機器人</b:widget-setting>
+                    <b:widget-setting name='link-38'>https://t.me/oli_photo_bot</b:widget-setting>
+                    <b:widget-setting name='text-39'>_AI 幫你選出潛力股 | 投資新聞濃縮包</b:widget-setting>
+                    <b:widget-setting name='link-39'>https://t.me/oliservice</b:widget-setting>
+                    <b:widget-setting name='text-40'>瀏覽器套件chrome web</b:widget-setting>
+                    <b:widget-setting name='link-40'>#</b:widget-setting>
+                    <b:widget-setting name='text-41'>_小濃縮 (Quick Summary &amp; Chat) 333 - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-41'><![CDATA[https://chromewebstore.google.com/detail/小濃縮-quick-summary-chat-33/ilgegilcecmgnomacgjiklmhfgioekof]]></b:widget-setting>
+                    <b:widget-setting name='text-42'>_WebTalk 333 - Chat and Summarize on any website. - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-42'><![CDATA[https://chromewebstore.google.com/detail/webtalk-333-chat-and-summ/hhhdloelamldfadfobnhdhpfmbbdppdb]]></b:widget-setting>
+                    <b:widget-setting name='text-43'>_TabVoice 333 英文檢定單字複習器 (GRE/TOEFL/GMAT/SAT) - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-43'><![CDATA[https://chromewebstore.google.com/detail/tabvoice-333-英文檢定單字複習器-gr/mpbkdjjihhjjhmlnchkbpgfclhhdblap]]></b:widget-setting>
+                    <b:widget-setting name='text-44'>_Font Changer 改字體 333 - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-44'><![CDATA[https://chromewebstore.google.com/detail/font-changer-改字體-333/ilmdkfomedcdolkiiagifgmgohahlmoi]]></b:widget-setting>
+                    <b:widget-setting name='text-45'>_Shorten and undo closed URL 333 - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-45'><![CDATA[https://chromewebstore.google.com/detail/shorten-and-undo-closed-u/cpgihhghfphpbapipfllmlplmfokfhaj]]></b:widget-setting>
+                    <b:widget-setting name='text-46'>_Tabs URL Copy 快速大量複製分頁網址 333 - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-46'><![CDATA[https://chromewebstore.google.com/detail/tabs-url-copy-快速大量複製分頁網址/lfhdpmaolmbejolceggollfelmhbmmkb]]></b:widget-setting>
+                    <b:widget-setting name='text-47'>_輪盤選擇器 - Chrome 線上應用程式商店</b:widget-setting>
+                    <b:widget-setting name='link-47'><![CDATA[https://chromewebstore.google.com/detail/oaaajpfjfjhbegdiajklkaljjddlbnjp/preview?hl=zh-TW&authuser=0]]></b:widget-setting>
+                    <b:widget-setting name='text-48'>Bot</b:widget-setting>
+                    <b:widget-setting name='link-48'>#</b:widget-setting>
+                    <b:widget-setting name='text-49'>_LM網頁機器人</b:widget-setting>
+                    <b:widget-setting name='link-49'>https://bot.david888.com/</b:widget-setting>
+                    <b:widget-setting name='text-50'>_奇門遁甲解盤</b:widget-setting>
+                    <b:widget-setting name='link-50'>https://qi.david888.com/</b:widget-setting>
+                    <b:widget-setting name='text-51'>_梅花易數解盤</b:widget-setting>
+                    <b:widget-setting name='link-51'>https://qi.david888.com/meihua</b:widget-setting>
                   </b:widget-settings>
                   <b:includable id='main' var='this'>
       <b:include name='widget-title'/>
